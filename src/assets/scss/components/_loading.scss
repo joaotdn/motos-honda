@@ -1,0 +1,31 @@
+.loading {
+  background-color: $white;
+  z-index: 99999;
+
+  > div {
+    @include vertical-center;
+    left: 0;
+  }
+}
+.lds-dual-ring {
+  display: inline-block;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: rem-calc(120);
+  height: rem-calc(120);
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid $light-gray;
+  border-color: $light-gray transparent $light-gray transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import jQuery from 'jquery';
 import 'what-input';
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
@@ -6,12 +6,28 @@ import 'what-input';
 // it would execute earlier than we have assigned the global variable.
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
-window.jQuery = $;
+let $;
+window.jQuery = jQuery;
+$ = jQuery;
+require('./lib/preload');
 require('foundation-sites');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-
 $(document).foundation();
+
+$(document).ready(function() {
+    // $('#jpreBar','#jpreOverlay').clone().appendTo('#main-slider');
+
+    $('body').jpreLoader({
+        // loaderVPos: '41.5%',
+        // splashID: '#logo-footer',
+        autoClose: false,
+        showPercentage: true,
+        closeBtnText: ''
+    },function() {
+        console.log('teu cu');
+    });
+});
