@@ -4,11 +4,12 @@
 *
 * Name:			jPreLoader.js
 * Author:		Kenny Ooi - http://www.inwebson.com
-* Date:			July 11, 2012
+* Date:			July 11, 2012		
 * Version:		2.1
 * Example:		http://www.inwebson.com/demo/jpreloader-v2/
-*
+*	
 */
+
 (function($) {
     var items = new Array(),
         errors = new Array(),
@@ -55,7 +56,7 @@
     //create jpreLoader UI
     var createContainer = function() {
 
-        var jOverlay = $('<div></div>')
+        jOverlay = $('<div></div>')
             .attr('id', 'jpreOverlay')
             .css({
                 position: "fixed",
@@ -68,7 +69,7 @@
             .appendTo('body');
 
         if(jpreOptions.showSplash) {
-            var jContent = $('<div></div>')
+            jContent = $('<div></div>')
                 .attr('id', 'jpreSlide')
                 .appendTo(jOverlay);
 
@@ -83,37 +84,32 @@
             jpreOptions.splashFunction()
         }
 
-        var jLoader = $('<div></div>')
+        jLoader = $('<div></div>')
             .attr('id', 'jpreLoader')
-            .appendTo(jOverlay);
+            .appendTo(jOverlay)
+            .wrapAll('<div class="preloadContent"></div>');
 
         var posWidth = $(window).width() - $(jLoader).width();
         $(jLoader).css({
-            position: 'absolute',
-            top: jpreOptions.loaderVPos,
-            left: Math.round((50 / $(window).width()) * posWidth) + '%'
+            display: 'inline-block'
         });
 
-        var jBar = $('<div></div>')
+        jBar = $('<div></div>')
             .attr('id', 'jpreBar')
             .css({
                 width: '0%',
                 height: '100%'
             })
-            .appendTo('#main-slider');
+            .appendTo(jLoader);
 
         if(jpreOptions.showPercentage) {
-            var jPer = $('<div></div>')
+            jPer = $('<div></div>')
                 .attr('id', 'jprePercentage')
-                .css({
-                    position: 'relative',
-                    height: '100%'
-                })
                 .appendTo(jLoader)
                 .html('Loading...');
         }
         if( !jpreOptions.autoclose ) {
-            var jButton = $('<div></div>')
+            jButton = $('<div></div>')
                 .attr('id', 'jpreButton')
                 .on('click', function() {
                     loadComplete();

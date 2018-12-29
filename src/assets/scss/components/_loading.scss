@@ -1,31 +1,40 @@
-.loading {
-  background-color: $white;
-  z-index: 99999;
+$loading_width: rem-calc(300);
+$loading_height: rem-calc(192);
 
-  > div {
-    @include vertical-center;
-    left: 0;
-  }
+.preloadContent {
+  width: 100%;
+  text-align: center;
+  @include vertical-center;
+  left: 0;
 }
-.lds-dual-ring {
+
+#jpreOverlay {
+  background-color: #fafafa;
+}
+
+#jpreSlide {
+  display: none;
+}
+
+#jpreBar {
+  background-image: url(../img/loadin-color.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+#jpreLoader {
+  width: $loading_width;
+  height: $loading_height;
   display: inline-block;
+  background-image: url(../img/loadin-bw.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: rem-calc(120);
-  height: rem-calc(120);
-  margin: 1px;
-  border-radius: 50%;
-  border: 5px solid $light-gray;
-  border-color: $light-gray transparent $light-gray transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
-}
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+#jprePercentage {
+  text-align: center;
+  padding-top: rem-calc(20);
+  font-family: 'Arvo', serif;
+  font-weight: 900;
+  font-size: rem-calc(18);
 }

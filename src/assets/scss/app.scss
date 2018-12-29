@@ -63,4 +63,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import "global/bases";
 @import "components/loading";
+
+// Home
+@import "components/home.header";

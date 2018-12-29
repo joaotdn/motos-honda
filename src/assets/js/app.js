@@ -9,25 +9,21 @@ import 'what-input';
 let $;
 window.jQuery = jQuery;
 $ = jQuery;
-require('./lib/preload');
 require('foundation-sites');
+require('./lib/preload');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
-
-$(document).foundation();
-
 $(document).ready(function() {
-    // $('#jpreBar','#jpreOverlay').clone().appendTo('#main-slider');
-
     $('body').jpreLoader({
-        // loaderVPos: '41.5%',
-        // splashID: '#logo-footer',
-        autoClose: false,
+        loaderVPos: '0%',
+        splashID: '#logo-footer',
+        autoClose: true,
         showPercentage: true,
         closeBtnText: ''
     },function() {
-        console.log('teu cu');
+        console.log('teste');
     });
 });
+
+$(document).foundation();

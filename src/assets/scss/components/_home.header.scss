@@ -1,0 +1,58 @@
+#home-header {
+  background-image: url(../img/bg-top.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.contact-top-bar {
+  border-bottom: 1px solid rgba($light-gray, .5);
+  color: $white;
+  font-size: rem-calc(12);
+  //text-transform: uppercase;
+  z-index: 9;
+  height: rem-calc(40);
+  opacity: .8;
+
+  p {
+    line-height: rem-calc(40);
+  }
+}
+
+.top-header {
+  z-index: 9;
+
+  span {
+    display: block;
+    color: $white;
+    font-size: rem-calc(24);
+    padding-top: rem-calc(8);
+  }
+
+  li {
+    a {
+      //font-family: $header-font-family;
+      color: $white;
+      font-weight: 700;
+      line-height: rem-calc(90);
+    }
+
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+
+  @include breakpoint(medium up) {
+    span {
+      padding-left: rem-calc(35);
+    }
+  }
+}
+
+.mask-black {
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: rgba($black, .5);
+}
