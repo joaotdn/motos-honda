@@ -2,3 +2,7 @@ html, body {
   @extend .width-100;
   @extend .height-100;
 }
+
+a {
+  transition: color .3s linear;
+}

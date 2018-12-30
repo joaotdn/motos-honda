@@ -1,0 +1,56 @@
+.menu-offcanvas {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  width: rem-calc(240);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: transform .3s linear;
+  -moz-transition: transform .3s linear;
+  -ms-transition: transform .3s linear;
+  -o-transition: transform .3s linear;
+  transition: transform .3s linear;
+
+  &.active {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  a {
+    font-weight: 700;
+  }
+}
+
+.close-menu {
+  background-color: rgba($white, .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  display: block;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
