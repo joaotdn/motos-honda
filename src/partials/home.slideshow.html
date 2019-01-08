@@ -1,24 +1,90 @@
-<div id="home-slideshow" class="grid-container position-relative">
+<div id="home-slideshow" class="grid-container position-relative opacity-0">
     <div class="grid-x grid-padding-x">
-        <div class="slide cell small-12">
-            <div class="slide-desc">
-                <h1>CG 125i Cargo</h1>
-                <p>Uma máquina de trabalhar</p>
-                <p><a href="#" class="button">Tenho interesse</a></p>
+        <div class="slide cell small-12 vh wow fadeIn">
+            <div class="width-100 height-100 cycle-slideshow position-static vh wow fadeIn"
+                 data-cycle-fx="fade"
+                 data-cycle-timeout="6000"
+                 data-cycle-slides="> div"
+                 data-cycle-next=".next-slide"
+                 data-cycle-prev=".prev-slide"
+                 data-cycle-swipe=true
+                 data-cycle-swipe-fx=scrollHorz
+                 data-cycle-pager=".cycle-pager"
+                 data-cycle-pager-template="<span></span>"
+            >
+                <div class="width-100 height-100">
+                    <div class="slide-desc">
+                        <h1>CG 125i Cargo</h1>
+                        <p>Uma máquina de trabalhar</p>
+                        <p><a href="#" class="button">Tenho interesse</a></p>
+                    </div>
+
+                    <figure class="slide-img position-absolute">
+                        <img src="{{root}}assets/img/slide1.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="width-100 height-100">
+                    <div class="slide-desc">
+                        <h1>CG 125i Cargo</h1>
+                        <p>Uma máquina de trabalhar</p>
+                        <p><a href="#" class="button">Tenho interesse</a></p>
+                    </div>
+
+                    <figure class="slide-img position-absolute">
+                        <img src="{{root}}assets/img/slide2.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="width-100 height-100">
+                    <div class="slide-desc">
+                        <h1>CG 125i Cargo</h1>
+                        <p>Uma máquina de trabalhar</p>
+                        <p><a href="#" class="button">Tenho interesse</a></p>
+                    </div>
+
+                    <figure class="slide-img position-absolute">
+                        <img src="{{root}}assets/img/slide3.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="width-100 height-100">
+                    <div class="slide-desc">
+                        <h1>CG 125i Cargo</h1>
+                        <p>Uma máquina de trabalhar</p>
+                        <p><a href="#" class="button">Tenho interesse</a></p>
+                    </div>
+
+                    <figure class="slide-img position-absolute">
+                        <img src="{{root}}assets/img/slide4.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="width-100 height-100">
+                    <div class="slide-desc">
+                        <h1>CG 125i Cargo</h1>
+                        <p>Uma máquina de trabalhar</p>
+                        <p><a href="#" class="button">Tenho interesse</a></p>
+                    </div>
+
+                    <figure class="slide-img position-absolute">
+                        <img src="{{root}}assets/img/slide5.png" alt="">
+                    </figure>
+                </div>
             </div>
 
-            <figure class="slide-img position-absolute">
-                <img src="{{root}}assets/img/slide1.png" alt="">
-            </figure>
+            <div class="width-100 slide-pager">
+                <div class="cycle-pager"></div>
+            </div>
         </div>
     </div>
 </div>
 
 <nav class="nav-slide width-100">
     <a href="#" class="next-slide">
-        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
     </a>
     <a href="#" class="prev-slide">
-        <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-chevron-left"></i>
     </a>
 </nav>

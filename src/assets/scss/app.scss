@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
+//@import 'motion-ui';
 
 // Global styles
 @include foundation-global-styles;
@@ -64,6 +64,7 @@
 //@include motion-ui-animations;
 
 @import "global/bases";
+@import "global/utils";
 @import "components/loading";
 @import "components/menu.offcanvas";
 @import "components/home.header";

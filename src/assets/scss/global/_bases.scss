@@ -3,6 +3,10 @@ html, body {
   @extend .height-100;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   transition: color .3s linear;
 }
