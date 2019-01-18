@@ -1,0 +1,58 @@
+.scroll-menu {
+  padding: rem-calc(10 0);
+  background-color: $white;
+  border-bottom: 2px solid $primary-color;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.logo-scroll {
+  a {
+    color: $black;
+    font-weight: 700;
+  }
+
+  span {
+    -webkit-transform: translateY(rem-calc(3));
+    -moz-transform: translateY(rem-calc(3));
+    -ms-transform: translateY(rem-calc(3));
+    -o-transform: translateY(rem-calc(3));
+    transform: translateY(rem-calc(3));
+  }
+}
+
+.menu-btn-scroll {
+  @include hamburger($primary-color, $primary-color);
+  float: left;
+  margin: rem-calc(8 20 0 0);
+}
+
+.scroll-nav {
+  a {
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    color: $black;
+
+    &.is-active {
+      color: $primary-color;
+    }
+  }
+}

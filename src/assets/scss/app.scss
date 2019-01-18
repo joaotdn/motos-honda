@@ -35,9 +35,9 @@
 // Containers
 //@include foundation-accordion;
 //@include foundation-media-object;
-//@include foundation-orbit;
+@include foundation-orbit;
 //@include foundation-responsive-embed;
-//@include foundation-tabs;
+@include foundation-tabs;
 //@include foundation-thumbnail;
 // Menu-based containers
 @include foundation-menu;
@@ -65,7 +65,11 @@
 
 @import "global/bases";
 @import "global/utils";
+@import "global/sections";
+@import "aos/aos";
+//@import "owl/owl.carousel";
 @import "components/loading";
+@import "components/menu.scroll";
 @import "components/menu.offcanvas";
 @import "components/home.header";
 @import "components/home.slideshow";

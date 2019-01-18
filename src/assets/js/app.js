@@ -1,21 +1,12 @@
-import jQuery from 'jquery';
+import $ from 'jquery';
+import AOS from 'aos';
 import 'what-input';
-import WOW from './lib/wow';
 
-// Foundation JS relies on a global varaible. In ES6, all imports are hoisted
-// to the top of the file so if we used`import` to import Foundation,
-// it would execute earlier than we have assigned the global variable.
-// This is why we have to use CommonJS require() here since it doesn't
-// have the hoisting behavior.
-let $;
-window.jQuery = jQuery;
-$ = jQuery;
+window.jQuery = $;
 require('foundation-sites');
 require('./lib/preload');
 require('./lib/cycle');
 
-// If you want to pick and choose which modules to include, comment out the above and uncomment
-// the line below
 $(document).ready(function() {
     $('body').jpreLoader({
         loaderVPos: '0%',
@@ -24,20 +15,7 @@ $(document).ready(function() {
         showPercentage: true,
         closeBtnText: ''
     },function() {
-        setTimeout(function () {
-            $('#home-slideshow').removeClass('opacity-0');
-        }, 100);
-
-        const wow = new WOW(
-            {
-                boxClass:     'wow',      // default
-                animateClass: 'animated', // default
-                offset:       0,          // default
-                mobile:       true,       // default
-                live:         true        // default
-            }
-        );
-        wow.init();
+        AOS.init();
     });
 });
 
@@ -49,13 +27,28 @@ $(document).foundation();
         $('.menu-offcanvas, .close-menu').toggleClass('active');
     });
 
-    $( '.cycle-slideshow' ).on( 'cycle-after', function( event, opts ) {
-        $('.slide-img, .slide-desc').addClass('show');
+    $('.about-slide').cycle();
+
+    $('*[data-bgimage]').each(function () {
+        let dt = $(this).data('bgimage');
+        $(this).css('backgroundImage', 'url('+ dt +')').addClass('bgcover');
     });
-    $( '.cycle-slideshow' ).on( 'cycle-initialized', function( event, opts ) {
-        $('.slide-img, .slide-desc').addClass('show');
+
+    $( '.cycle-slideshow' ).on( 'cycle-after', function() {
+        $('.cycle-slide-active .slide-image, .cycle-slide-active .slide-text').addClass('show');
     });
-    $( '.cycle-slideshow' ).on( 'cycle-before', function( event, opts ) {
-        $('.slide-img, .slide-desc').removeClass('show');
+    $( '.cycle-slideshow' ).on( 'cycle-initialized', function() {
+        $('.cycle-slide-active .slide-image, .cycle-slide-active .slide-text').addClass('show');
+    });
+    $( '.cycle-slideshow' ).on( 'cycle-before', function() {
+        $('.cycle-slide-active .slide-image, .cycle-slide-active .slide-text').removeClass('show');
+    });
+
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 160) {
+            $('.scroll-menu').addClass('show');
+        } else {
+            $('.scroll-menu').removeClass('show');
+        }
     });
 })();

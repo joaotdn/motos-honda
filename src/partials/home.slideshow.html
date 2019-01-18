@@ -1,90 +1,99 @@
-<div id="home-slideshow" class="grid-container position-relative opacity-0">
+<div id="home-slideshow" class="grid-container position-relative">
     <div class="grid-x grid-padding-x">
-        <div class="slide cell small-12 vh wow fadeIn">
-            <div class="width-100 height-100 cycle-slideshow position-static vh wow fadeIn"
-                 data-cycle-fx="fade"
-                 data-cycle-timeout="6000"
-                 data-cycle-slides="> div"
-                 data-cycle-next=".next-slide"
-                 data-cycle-prev=".prev-slide"
-                 data-cycle-swipe=true
-                 data-cycle-swipe-fx=scrollHorz
-                 data-cycle-pager=".cycle-pager"
-                 data-cycle-pager-template="<span></span>"
-            >
-                <div class="width-100 height-100">
-                    <div class="slide-desc">
-                        <h1>CG 125i Cargo</h1>
-                        <p>Uma máquina de trabalhar</p>
-                        <p><a href="#" class="button">Tenho interesse</a></p>
-                    </div>
+        <div class="cell small-12">
+            <div class="slide-content overflow-x-hidden" role="region" aria-label="Favorite Space Pictures">
+                <ul class="slide-container cycle-slideshow"
+                    data-cycle-fx="fade"
+                    data-cycle-timeout="5000"
+                    data-cycle-slides="> li"
+                    data-cycle-prev="#prev-slide"
+                    data-cycle-next="#next-slide"
+                    data-cycle-pager=".slide-pager"
+                    data-cycle-pager-template="<span></span>"
+                >
+                    <li class="is-active slide-slide">
+                        <div class="width-100 text-center large-text-left slide-text">
+                            <h2 class="margin-bottom-0">CG 125 Cargo</h2>
+                            <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
+                            <p class="margin-bottom-0">
+                                <a href="#" class="button margin-bottom-0">Tenho interesse</a>
+                            </p>
+                        </div>
+                        <div class="width-100 text-center large-text-right">
+                            <figure class="slide-figure display-inline-block">
+                                <img class="slide-image slide-img" src="{{root}}assets/img/slide1.png" alt="Space">
+                            </figure>
+                        </div>
+                    </li>
 
-                    <figure class="slide-img position-absolute">
-                        <img src="{{root}}assets/img/slide1.png" alt="">
-                    </figure>
-                </div>
+                    <li class="slide-slide">
+                        <div class="width-100 text-center large-text-left slide-text">
+                            <h2 class="margin-bottom-0">CG 125 Cargo</h2>
+                            <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
+                            <p class="margin-bottom-0">
+                                <a href="#" class="button margin-bottom-0">Tenho interesse</a>
+                            </p>
+                        </div>
+                        <div class="width-100 text-center large-text-right">
+                            <figure class="slide-figure display-inline-block">
+                                <img class="slide-image slide-img" src="{{root}}assets/img/slide2.png" alt="Space">
+                            </figure>
+                        </div>
+                    </li>
 
-                <div class="width-100 height-100">
-                    <div class="slide-desc">
-                        <h1>CG 125i Cargo</h1>
-                        <p>Uma máquina de trabalhar</p>
-                        <p><a href="#" class="button">Tenho interesse</a></p>
-                    </div>
+                    <li class="slide-slide">
+                        <div class="width-100 text-center large-text-left slide-text">
+                            <h2 class="margin-bottom-0">CG 125 Cargo</h2>
+                            <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
+                            <p class="margin-bottom-0">
+                                <a href="#" class="button margin-bottom-0">Tenho interesse</a>
+                            </p>
+                        </div>
+                        <div class="width-100 text-center large-text-right">
+                            <figure class="slide-figure display-inline-block">
+                                <img class="slide-image slide-img" src="{{root}}assets/img/slide3.png" alt="Space">
+                            </figure>
+                        </div>
+                    </li>
 
-                    <figure class="slide-img position-absolute">
-                        <img src="{{root}}assets/img/slide2.png" alt="">
-                    </figure>
-                </div>
+                    <li class="slide-slide">
+                        <div class="width-100 text-center large-text-left slide-text">
+                            <h2 class="margin-bottom-0">CG 125 Cargo</h2>
+                            <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
+                            <p class="margin-bottom-0">
+                                <a href="#" class="button margin-bottom-0">Tenho interesse</a>
+                            </p>
+                        </div>
+                        <div class="width-100 text-center large-text-right">
+                            <figure class="slide-figure display-inline-block">
+                                <img class="slide-image slide-img" src="{{root}}assets/img/slide4.png" alt="Space">
+                            </figure>
+                        </div>
+                    </li>
 
-                <div class="width-100 height-100">
-                    <div class="slide-desc">
-                        <h1>CG 125i Cargo</h1>
-                        <p>Uma máquina de trabalhar</p>
-                        <p><a href="#" class="button">Tenho interesse</a></p>
-                    </div>
-
-                    <figure class="slide-img position-absolute">
-                        <img src="{{root}}assets/img/slide3.png" alt="">
-                    </figure>
-                </div>
-
-                <div class="width-100 height-100">
-                    <div class="slide-desc">
-                        <h1>CG 125i Cargo</h1>
-                        <p>Uma máquina de trabalhar</p>
-                        <p><a href="#" class="button">Tenho interesse</a></p>
-                    </div>
-
-                    <figure class="slide-img position-absolute">
-                        <img src="{{root}}assets/img/slide4.png" alt="">
-                    </figure>
-                </div>
-
-                <div class="width-100 height-100">
-                    <div class="slide-desc">
-                        <h1>CG 125i Cargo</h1>
-                        <p>Uma máquina de trabalhar</p>
-                        <p><a href="#" class="button">Tenho interesse</a></p>
-                    </div>
-
-                    <figure class="slide-img position-absolute">
-                        <img src="{{root}}assets/img/slide5.png" alt="">
-                    </figure>
-                </div>
-            </div>
-
-            <div class="width-100 slide-pager">
-                <div class="cycle-pager"></div>
+                    <li class="slide-slide">
+                        <div class="width-100 text-center large-text-left slide-text">
+                            <h2 class="margin-bottom-0">CG 125 Cargo</h2>
+                            <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
+                            <p class="margin-bottom-0">
+                                <a href="#" class="button margin-bottom-0">Tenho interesse</a>
+                            </p>
+                        </div>
+                        <div class="width-100 text-center large-text-right">
+                            <figure class="slide-figure display-inline-block">
+                                <img class="slide-image slide-img" src="{{root}}assets/img/slide5.png" alt="Space">
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
 
-<nav class="nav-slide width-100">
-    <a href="#" class="next-slide">
-        <i class="fas fa-chevron-right"></i>
-    </a>
-    <a href="#" class="prev-slide">
-        <i class="fas fa-chevron-left"></i>
-    </a>
-</nav>
+<div class="slide-controls">
+    <a href="#" id="prev-slide" title="Anterior"><i class="fas fa-chevron-left"></i></a>
+    <a href="#" id="next-slide" title="Próximo"><i class="fas fa-chevron-right"></i></a>
+</div>
+
+<div class="slide-pager"></div>
