@@ -15,3 +15,18 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.button.glass {
+  background-color: transparent;
+  border: 1px solid $white;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+
+  &:hover {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}
