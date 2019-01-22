@@ -46,9 +46,9 @@ $(document).foundation();
 
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 160) {
-            $('.scroll-menu').addClass('show');
+            $('.scroll-menu, .back-top').addClass('show');
         } else {
-            $('.scroll-menu').removeClass('show');
+            $('.scroll-menu, .back-top').removeClass('show');
         }
     });
 })();

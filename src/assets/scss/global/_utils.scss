@@ -29,4 +29,11 @@
     border-color: $primary-color;
     color: $primary-color;
   }
+
+  &.bl-hover {
+    &:hover {
+      border-color: $black;
+      color: $black;
+    }
+  }
 }
