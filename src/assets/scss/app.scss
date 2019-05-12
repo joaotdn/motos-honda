@@ -29,7 +29,7 @@
 //@include foundation-callout;
 //@include foundation-card;
 //@include foundation-dropdown;
-//@include foundation-pagination;
+@include foundation-pagination;
 //@include foundation-tooltip;
 
 // Containers
@@ -68,6 +68,7 @@
 @import "global/sections";
 @import "aos/aos";
 //@import "owl/owl.carousel";
+@import "components/header";
 @import "components/loading";
 @import "components/menu.scroll";
 @import "components/menu.offcanvas";

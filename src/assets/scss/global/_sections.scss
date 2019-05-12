@@ -67,6 +67,12 @@
       width: 50%;
     }
   }
+
+  &.page-header {
+    h3 {
+      color: $primary-color;
+    }
+  }
 }
 
 .contact-form {
@@ -196,6 +202,12 @@
 
   h3 {
     @extend .margin-top-1;
+  }
+
+  &.list-products-page {
+    a {
+      color: $black;
+    }
   }
 
   @include breakpoint(large up) {
@@ -390,5 +402,37 @@
     text-align: center;
     color: $white;
     display: block;
+  }
+}
+
+// PAGE BODY
+#page-body {
+  min-height: rem-calc(600);
+  padding-top: rem-calc(100);
+
+  @include breakpoint(large up) {
+    min-height: rem-calc(800);
+    padding-top: rem-calc(120);
+  }
+}
+
+.page-header {
+  img {
+    width: rem-calc(60);
+  }
+
+  select {
+    color: $black;
+    border: 1px solid $light-gray;
+
+    &:focus {
+      background-color: $white;
+    }
+  }
+
+  @include breakpoint(medium up) {
+    img {
+      width: rem-calc(80);
+    }
   }
 }

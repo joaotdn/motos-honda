@@ -1,0 +1,42 @@
+.header {
+  padding-top: rem-calc(20);
+  padding-bottom: rem-calc(20);
+  border-bottom: 2px solid $primary-color;
+  background-color: $black;
+  background-image: url(../img/bg-header.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+
+  img {
+    width: rem-calc(40);
+  }
+
+
+  a {
+    color: $white !important;
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+
+  ul.menu {
+    top: 8px;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  @include breakpoint(large up) {
+    img {
+      width: rem-calc(60);
+    }
+
+    .logo-scroll {
+      span {
+        font-size: rem-calc(22);
+      }
+    }
+  }
+}

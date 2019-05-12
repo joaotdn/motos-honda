@@ -1,0 +1,34 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - Honda Cavalcanti Primo</title>
+    <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Poppins:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+<body>
+
+{{> menu.offcanvas}}
+{{> header}}
+<div id="page-body" class="grid-container"
+    data-aos="fade"
+     data-aos-delay="800"
+>
+    <div class="grid-x grid-padding-x">
+        {{> body}}
+    </div>
+</div>
+{{> footer}}
+{{> backtotop}}
+
+<script src="{{root}}assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+</body>
+</html>
