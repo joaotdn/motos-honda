@@ -165,7 +165,7 @@
 }
 
 .list-products {
-  figure {
+  a {
     position: relative;
   }
 
@@ -196,6 +196,12 @@
 
   h3 {
     @extend .margin-top-1;
+  }
+
+  @include breakpoint(large up) {
+    h3 {
+      font-size: rem-calc(24);
+    }
   }
 }
 
