@@ -1,5 +1,15 @@
+{{#ifpage 'index'}}
 <div class="back-top" data-magellan>
     <a href="#home-header">
         <i class="fas fa-chevron-up"></i>
     </a>
 </div>
+{{/ifpage}}
+
+{{#unlesspage 'index'}}
+<div class="back-top" data-magellan>
+    <a href="#page-body">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</div>
+{{/unlesspage}}

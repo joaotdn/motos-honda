@@ -22155,7 +22155,18 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
     } else {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.scroll-menu, .back-top').removeClass('show');
     }
-  });
+  }); // formulario myhonda
+
+  var dataProduct = jquery__WEBPACK_IMPORTED_MODULE_0___default()('*[data-product]');
+
+  if (dataProduct.length) {
+    dataProduct.each(function (i) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).on('click', function () {
+        var dt = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data('product');
+        if (dt) jquery__WEBPACK_IMPORTED_MODULE_0___default()('#product-title').text('').text(dt);
+      });
+    });
+  }
 })();
 
 /***/ }),

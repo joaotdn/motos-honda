@@ -45,3 +45,18 @@
 .top-3 {
   top: rem-calc(3);
 }
+
+.input-normal {
+  background-color: $white;
+  color: $black;
+  border: 1px solid $light-gray;
+
+  &::placeholder {
+    color: $light-gray;
+  }
+
+  &:focus {
+    background-color: $white;
+    color: $black;
+  }
+}

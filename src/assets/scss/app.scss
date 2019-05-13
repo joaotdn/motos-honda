@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-//@import 'motion-ui';
+@import 'motion-ui';
 
 // Global styles
 @include foundation-global-styles;
@@ -48,7 +48,7 @@
 
 // Layout components
 //@include foundation-off-canvas;
-//@include foundation-reveal;
+@include foundation-reveal;
 //@include foundation-sticky;
 //@include foundation-title-bar;
 //@include foundation-top-bar;
@@ -60,8 +60,8 @@
 @include foundation-prototype-classes;
 
 // Motion UI
-//@include motion-ui-transitions;
-//@include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
 @import "global/bases";
 @import "global/utils";
@@ -74,3 +74,4 @@
 @import "components/menu.offcanvas";
 @import "components/home.header";
 @import "components/home.slideshow";
+@import "components/category";

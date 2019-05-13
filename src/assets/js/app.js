@@ -51,4 +51,17 @@ $(document).foundation();
             $('.scroll-menu, .back-top').removeClass('show');
         }
     });
+
+    // formulario myhonda
+    const dataProduct = $('*[data-product]');
+    if(dataProduct.length) {
+        dataProduct.each(function (i) {
+            $(this).on('click', function () {
+                const dt = $(this).data('product');
+                if (dt) $('#product-title')
+                    .text('')
+                    .text(dt);
+            });
+        })
+    }
 })();
