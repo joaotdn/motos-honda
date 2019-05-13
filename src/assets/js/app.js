@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import AOS from 'aos';
 import 'what-input';
+import {sendForm, getProductName} from './lib/sendMyhonda';
 
 window.jQuery = $;
 require('foundation-sites');
@@ -55,18 +56,6 @@ $(document).foundation();
     });
 
     // formulario myhonda
-    const dataProduct = $('*[data-product]');
-    if(dataProduct.length) {
-        dataProduct.each(function (i) {
-            $(this).on('click', function () {
-                const dt = $(this).data('product');
-                if (dt) {
-                    $('#product-title')
-                        .text('')
-                        .text(dt);
-                    $('#model_interest__c').val(dt);
-                }
-            });
-        })
-    }
+    getProductName();
+    sendForm();
 })();
