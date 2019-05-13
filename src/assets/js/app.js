@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import AOS from 'aos';
 import 'what-input';
-import {sendForm, getProductName} from './lib/sendMyhonda';
+import {getProductName} from './lib/sendMyhonda';
 
 window.jQuery = $;
 require('foundation-sites');
@@ -57,5 +57,4 @@ $(document).foundation();
 
     // formulario myhonda
     getProductName();
-    sendForm();
 })();

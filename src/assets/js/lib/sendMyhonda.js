@@ -1,18 +1,5 @@
 import $ from "jquery";
 
-//action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"
-
-export function sendForm() {
-    $('#myhonda').on('submit', function () {
-       $.ajax({
-           url: "https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
-       })
-           .done(function () {
-               console.log('enviado');
-           })
-    });
-}
-
 export function getProductName() {
     const dataProduct = $('*[data-product]');
     if(dataProduct.length) {
