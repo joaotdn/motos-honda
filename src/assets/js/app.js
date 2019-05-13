@@ -19,6 +19,8 @@ $(document).ready(function() {
     });
 });
 
+Foundation.Abide.defaults.patterns['cpf'] = /^([0-9]){11}$/;
+
 $(document).foundation();
 
 (function () {
@@ -58,9 +60,12 @@ $(document).foundation();
         dataProduct.each(function (i) {
             $(this).on('click', function () {
                 const dt = $(this).data('product');
-                if (dt) $('#product-title')
-                    .text('')
-                    .text(dt);
+                if (dt) {
+                    $('#product-title')
+                        .text('')
+                        .text(dt);
+                    $('#model_interest__c').val(dt);
+                }
             });
         })
     }

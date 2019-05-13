@@ -14,3 +14,22 @@ a {
 .page-body {
   opacity: 0;
 }
+
+.reveal {
+  h1, h2, h3, p, label, input, select {
+    color: $white;
+    font-family: 'Poppins', san-serif;
+  }
+
+  select {
+    background-color: darken($primary-color, 5%);
+  }
+
+  .is-invalid-input:not(:focus) {
+    background-color: darken($primary-color, 2%);
+  }
+
+  .close-button {
+    color: $white;
+  }
+}

@@ -1,3 +1,7 @@
 .search-product {
   border-top: 1px solid $light-gray;
 }
+
+#product-title {
+  @include separator(center, 1px, 25%, darken($primary-color, 5%), rem-calc(6));
+}

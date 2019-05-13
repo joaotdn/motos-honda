@@ -22128,6 +22128,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     aos__WEBPACK_IMPORTED_MODULE_1___default.a.init();
   });
 });
+Foundation.Abide.defaults.patterns['cpf'] = /^([0-9]){11}$/;
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 
 (function () {
@@ -22163,7 +22164,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
     dataProduct.each(function (i) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).on('click', function () {
         var dt = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data('product');
-        if (dt) jquery__WEBPACK_IMPORTED_MODULE_0___default()('#product-title').text('').text(dt);
+
+        if (dt) {
+          jquery__WEBPACK_IMPORTED_MODULE_0___default()('#product-title').text('').text(dt);
+          jquery__WEBPACK_IMPORTED_MODULE_0___default()('#model_interest__c').val(dt);
+        }
       });
     });
   }
