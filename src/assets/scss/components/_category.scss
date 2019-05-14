@@ -25,3 +25,11 @@ ul.share-buttons .sr-only{
   width: 1px;
   overflow: hidden;
 }
+
+.accessories-form {
+  select, input, select:focus, input:focus {
+    background-color: $white;
+    color: $dark-gray;
+    border: 1px solid $light-gray;
+  }
+}
