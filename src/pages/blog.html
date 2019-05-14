@@ -1,0 +1,79 @@
+---
+layout: page
+title: Novidades
+---
+<div class="cell small-12">
+    <header class="width-100 page-header section-title-3 grid-x">
+        <div class="cell small-12 medium-8 margin-bottom-1 text-center medium-text-left">
+            <h3 class="font-bold text-uppercase font-san-serif display-inline-block margin-0">
+                {{title}}
+            </h3>
+        </div>
+
+        <div class="cell small-12 margin-bottom-1 search-product padding-top-1 margin-top-1">
+            <label>Buscar uma notícia:
+                <input type="text" class="width-100 input-normal">
+            </label>
+        </div>
+    </header>
+
+    <section id="page-content" class="padding-bottom-3">
+        <nav class="cell small-12 margin-top-1">
+            <div class="grid-x grid-padding-x list-news">
+                {{#repeat 3}}
+                <div class="small-12 medium-6 large-4 cell"
+                     data-aos="fade-up"
+                >
+                    <figure class="width-100">
+                        <a href="#" class="display-inline-block news-figure" data-bgimage="{{root}}assets/img/fig1.jpeg"></a>
+                        <figcaption class="width-100 margin-top-1 news-txt">
+                            <h4><a href="#">Dreams feel real while we're in them.</a></h4>
+                            <p>Im going to improvise. Listen, there's something you should know about me...</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="small-12 medium-6 large-4 cell"
+                     data-aos="fade-up"
+                >
+                    <figure class="width-100">
+                        <a href="#" class="display-inline-block news-figure" data-bgimage="{{root}}assets/img/fig2.jpeg"></a>
+                        <figcaption class="width-100 margin-top-1 news-txt">
+                            <h4><a href="#">Dreams feel real while we're in them.</a></h4>
+                            <p>Im going to improvise. Listen, there's something you should know about me...</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="small-12 medium-6 large-4 cell"
+                     data-aos="fade-up"
+                >
+                    <figure class="width-100">
+                        <a href="#" class="display-inline-block news-figure" data-bgimage="{{root}}assets/img/fig3.jpeg"></a>
+                        <figcaption class="width-100 margin-top-1 news-txt">
+                            <h4><a href="#">Dreams feel real while we're in them.</a></h4>
+                            <p>Im going to improvise. Listen, there's something you should know about me...</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                {{/repeat}}
+            </div>
+        </nav>
+
+        <nav aria-label="Pagination" class="margin-top-3 width-100 text-center">
+            <ul class="pagination">
+                <li class="pagination-previous disabled">Anteriores <span class="show-for-sr">page</span></li>
+                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                <li><a href="#" aria-label="Page 2">2</a></li>
+                <li><a href="#" aria-label="Page 3">3</a></li>
+                <li><a href="#" aria-label="Page 4">4</a></li>
+                <li class="ellipsis" aria-hidden="true"></li>
+                <li><a href="#" aria-label="Page 12">12</a></li>
+                <li><a href="#" aria-label="Page 13">13</a></li>
+                <li class="pagination-next"><a href="#" aria-label="Next page">Próximas <span class="show-for-sr">page</span></a></li>
+            </ul>
+        </nav>
+    </section>
+</div>
+
+{{> form.myhonda}}
