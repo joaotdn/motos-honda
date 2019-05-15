@@ -1,90 +1,17 @@
+<?php
+get_header();
+?>
 
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motocicletas - Honda Cavalcanti Primo</title>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Poppins:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/app.css">
-</head>
-<body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
 
-<div class="menu-offcanvas height-100">
-    <button class="close-button" type="button" data-toggle-menu>
-        <span aria-hidden="true">&times;</span>
-    </button>
-
-    <ul class="menu vertical margin-top-2 main-menu-off" data-magellan>
-        <li><a href="#home-about">Sobre</a></li>
-        <li><a href="#home-products">Motocicletas</a></li>
-        <li><a href="#home-services">Serviços</a></li>
-        <li><a href="#home-news">Novidades</a></li>
-        <li><a href="#home-contact">Contato</a></li>    </ul>
-</div>
-<a href="#" data-toggle-menu class="close-menu width-100 height-100"></a><div class="header width-100 position-fixed-top shadow"
-     data-aos="fade-down"
-     data-aos-delay="600"
-     data-magellan-target="home-header"
->
-    <div class="grid-x grid-padding-x">
-        <div class="cell small-12 large-4">
-            <a href="#" data-toggle-menu class="menu-btn-scroll hide-for-large" data-toggle-menu></a>
-
-            <figure class="logo-scroll">
-                <a href="index.html" title="Página principal">
-                    <img src="assets/img/incon.png" alt="Honda Cavalcante Primo">
-                    <span class="display-inline-block position-relative top-3">Cavalcanti Primo</span>
-                </a>
-            </figure>
-        </div>
-
-        <div class="cell small-12 large-8 show-for-large scroll-nav">
-            <ul class="menu align-right" data-magellan>
-                <li><a href="index.html#home-about">Sobre</a></li>
-                <li><a href="products.html">Motocicletas</a></li>
-                <li><a href="index.html#home-services">Serviços</a></li>
-                <li><a href="blog.html">Novidades</a></li>
-                <li><a href="index.html#home-contact">Contato</a></li>            </ul>
-        </div>
-    </div>
-</div><div id="page-body" class="grid-container"
-    data-aos="fade"
+<div id="page-body" class="grid-container"
+     data-aos="fade"
      data-aos-delay="800"
 >
     <div class="grid-x grid-padding-x">
         <div class="cell small-12">
-            <header class="width-100 page-header section-title-3 grid-x">
-                <div class="cell small-12 medium-8 margin-bottom-1 text-center medium-text-left">
-                    <img src="assets/img/bike.png" alt="Motocicleta">
-                    <h3 class="font-bold text-uppercase margin-left-1 font-san-serif display-inline-block margin-0">
-                        Motocicletas
-                    </h3>
-                </div>
-                
-                <div class="cell small-12 medium-4 margin-bottom-1">
-                    <label>Categorias:
-                        <select name="cat-motos" id="cat-motos">
-                            <option value="todas">Todas</option>
-                            <option value="city">City</option>
-                            <option value="off-road">Off Road</option>
-                        </select>
-                    </label>
-                </div>
-        
-                <div class="cell small-12 margin-bottom-1 search-product padding-top-1">
-                    <label>Buscar motocicleta:
-                        <input type="text" placeholder="Nome do produto" class="width-100 input-normal">
-                    </label>
-                </div>
-            </header>
-        
+
+            <?php get_template_part('template-parts/header.archive.motocicletas'); ?>
+
             <section id="page-content" class="padding-bottom-3">
                 <div class="grid-x small-up-1 medium-up-2 large-up-3 list-products list-products-page">
                     <div class="cell" data-aos="fade-up" data-product="POP">
@@ -94,7 +21,8 @@
                         </figure>
                         <div class="width-100 text-center">
                             <h3><a href="#" data-toggle="modelForm">CG 125 Cargo</a></h3>
-                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho interesse</a></p>
+                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho
+                                    interesse</a></p>
                         </div>
                     </div>
                     <div class="cell" data-aos="fade-up" data-product="CG Cargo">
@@ -104,7 +32,8 @@
                         </figure>
                         <div class="width-100 text-center">
                             <h3><a href="#" data-toggle="modelForm">CG 125 Cargo</a></h3>
-                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho interesse</a></p>
+                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho
+                                    interesse</a></p>
                         </div>
                     </div>
                     <div class="cell" data-aos="fade-up" data-product="Titan 125">
@@ -114,7 +43,8 @@
                         </figure>
                         <div class="width-100 text-center">
                             <h3><a href="#" data-toggle="modelForm">CG 125 Cargo</a></h3>
-                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho interesse</a></p>
+                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho
+                                    interesse</a></p>
                         </div>
                     </div>
                     <div class="cell" data-aos="fade-up" data-product="Moto 555">
@@ -124,7 +54,8 @@
                         </figure>
                         <div class="width-100 text-center">
                             <h3><a href="#" data-toggle="modelForm">CG 125 Cargo</a></h3>
-                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho interesse</a></p>
+                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho
+                                    interesse</a></p>
                         </div>
                     </div>
                     <div class="cell" data-aos="fade-up" data-product="CB 500">
@@ -134,7 +65,8 @@
                         </figure>
                         <div class="width-100 text-center">
                             <h3><a href="#" data-toggle="modelForm">CG 125 Cargo</a></h3>
-                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho interesse</a></p>
+                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho
+                                    interesse</a></p>
                         </div>
                     </div>
                     <div class="cell" data-aos="fade-up" data-product="CBR 600">
@@ -144,11 +76,12 @@
                         </figure>
                         <div class="width-100 text-center">
                             <h3><a href="#" data-toggle="modelForm">CG 125 Cargo</a></h3>
-                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho interesse</a></p>
+                            <p><a href="#" class="button text-uppercase small" data-toggle="modelForm">Tenho
+                                    interesse</a></p>
                         </div>
                     </div>
                 </div>
-        
+
                 <nav aria-label="Pagination" class="margin-top-3 width-100 text-center">
                     <ul class="pagination">
                         <li class="pagination-previous disabled">Anteriores <span class="show-for-sr">page</span></li>
@@ -159,15 +92,17 @@
                         <li class="ellipsis" aria-hidden="true"></li>
                         <li><a href="#" aria-label="Page 12">12</a></li>
                         <li><a href="#" aria-label="Page 13">13</a></li>
-                        <li class="pagination-next"><a href="#" aria-label="Next page">Próximas <span class="show-for-sr">page</span></a></li>
+                        <li class="pagination-next"><a href="#" aria-label="Next page">Próximas <span
+                                        class="show-for-sr">page</span></a></li>
                     </ul>
                 </nav>
             </section>
         </div>
-        
-        <div class="reveal" id="modelForm" data-reveal data-close-on-click="true" data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+
+        <div class="reveal" id="modelForm" data-reveal data-close-on-click="true" data-animation-in="scale-in-up"
+             data-animation-out="scale-out-down">
             <h3 id="product-title" class="width-100 text-center margin-bottom-1 font-bold"></h3>
-        
+
             <form id="myhonda"
                   class="margin-top-1"
                   action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
@@ -179,12 +114,13 @@
                     <div class="grid-x grid-padding-x">
                         <div class="small-12 cell">
                             <label>Concessionária de interesse:
-                                <select  id="dealer_code_interest__c" name="dealer_code_interest__c">
+                                <select id="dealer_code_interest__c" name="dealer_code_interest__c">
                                     <option value="1010646">Cavalcanti Cajazeiras</option>
                                     <option value="1020641">Cavalcanti Itaporanga</option>
                                 </select>
                             </label>
-                            <label class="form-error" data-form-error-for="dealer_code_interest__c">Informe a concessionária.</label>
+                            <label class="form-error" data-form-error-for="dealer_code_interest__c">Informe a
+                                concessionária.</label>
                         </div>
                         <div class="small-12 medium-6 cell">
                             <label>Nome:
@@ -202,14 +138,16 @@
                             <label>Celular:
                                 <input type="tel" maxlength="14" minlength="11" id="mobile" name="mobile" required>
                             </label>
-                            <label class="form-error" data-form-error-for="mobile">Necessário informar o celular.</label>
+                            <label class="form-error" data-form-error-for="mobile">Necessário informar o
+                                celular.</label>
                         </div>
-        
+
                         <div class="small-12 medium-6 cell">
                             <label>Email:
                                 <input type="email" maxlength="80" id="email" name="email" required>
                             </label>
-                            <label class="form-error" data-form-error-for="email">Email inválido. Campo obrigatório.</label>
+                            <label class="form-error" data-form-error-for="email">Email inválido. Campo
+                                obrigatório.</label>
                         </div>
                         <div class="small-12 cell">
                             <label>CPF:
@@ -217,14 +155,14 @@
                             </label>
                             <label class="form-error" data-form-error-for="cpf__c">CPF inválido</label>
                         </div>
-        
+
                         <div class="small-12 cell">
                             <label>
                                 <input id="opt_in_email__c" name="opt_in_email__c" type="checkbox" value="1"
                                 />Desejo receber contatos via e-mails
                             </label>
                         </div>
-        
+
                         <div class="small-12 cell">
                             <label>
                                 <input id="opt_in_phone__c" name="opt_in_phone__c" type="checkbox" value="1"
@@ -233,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="grid-container">
                     <div class="grid-x grid-margin-x margin-top-1">
                         <fieldset class="cell large-6">
@@ -244,7 +182,7 @@
                         </fieldset>
                     </div>
                 </div>
-        
+
                 <input type="hidden" id="model_interest__c" name="model_interest__c" value="">
                 <input type=hidden name="oid" value="00D61000000HSuF">
                 <!--<input type="hidden" name="debug" value=1>-->
@@ -254,55 +192,15 @@
                 <input type="hidden" name="sub_source_media__c" id="sub_source_media__c" value="Site">
                 <input type=hidden name="retURL" value="http://www.honda.com.br/Paginas/default.aspx">
             </form>
-        
+
             <button class="close-button" data-close aria-label="Close reveal" type="button">
                 <span aria-hidden="true">&times;</span>
             </button>
-        </div>    </div>
-</div>
-<footer id="footer" class="width-100 position-relative clear">
-    <div class="grid-container">
-        <div class="grid-padding-x grid-x">
-            <div class="cell small-12 large-6">
-                <h1 class="logo-fotoer margin-bottom-2">
-                    <a href="#" title="Honda Cavalcante Primo">
-                        <img src="assets/img/icon-white.png" alt="">
-                        <span>Cavalcanti Primo</span>
-                    </a>
-                </h1>
-
-                <p>
-                    <i class="fas fa-phone"></i> (83) 988998877
-                </p>
-
-                <p>
-                    <i class="fas fa-map-marker-alt align-top"></i>
-                    <span class="display-inline-block">
-                        Rua José Firmino Ferreira, 976 - Centro<br>
-                        Cajazeiras - PB<br>
-                        CEP: 58900-000
-                    </span>
-                </p>
-            </div>
-
-            <div class="cell small-6 show-for-large">
-                <ul class="menu align-right" data-magellan>
-                    <li><a href="index.html#home-about">Sobre</a></li>
-                    <li><a href="products.html">Motocicletas</a></li>
-                    <li><a href="index.html#home-services">Serviços</a></li>
-                    <li><a href="blog.html">Novidades</a></li>
-                    <li><a href="index.html#home-contact">Contato</a></li>                </ul>
-            </div>
         </div>
     </div>
-</footer>
-<div class="back-top" data-magellan>
-    <a href="#page-body">
-        <i class="fas fa-chevron-up"></i>
-    </a>
 </div>
 
-<script src="assets/js/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
-</body>
-</html>
+
+<?php
+get_footer();
+?>

@@ -24,7 +24,6 @@ get_template_part('template-parts/home.products');
 ?>
 
 
-
     <section id="home-services" class="position-relative width-100 overflow-hidden"
              data-magellan-target="home-services">
         <div class="grid-container position-relative overflow-y-hidden">
@@ -242,144 +241,11 @@ get_template_part('template-parts/home.products');
                     frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
-    <footer id="footer" class="width-100 position-relative clear">
-        <div class="grid-container">
-            <div class="grid-padding-x grid-x">
-                <div class="cell small-12 large-6">
-                    <h1 class="logo-fotoer margin-bottom-2">
-                        <a href="#" title="Honda Cavalcante Primo">
-                            <img src="assets/img/icon-white.png" alt="">
-                            <span>Cavalcanti Primo</span>
-                        </a>
-                    </h1>
 
-                    <p>
-                        <i class="fas fa-phone"></i> (83) 988998877
-                    </p>
+<?php
+/**
+ * Formulario MyHonda
+ */
+get_template_part('template-parts/form.myhonda.motocicletas');
 
-                    <p>
-                        <i class="fas fa-map-marker-alt align-top"></i>
-                        <span class="display-inline-block">
-                            Rua José Firmino Ferreira, 976 - Centro<br>
-                            Cajazeiras - PB<br>
-                            CEP: 58900-000
-                        </span>
-                    </p>
-                </div>
-
-                <div class="cell small-6 show-for-large">
-                    <ul class="menu align-right" data-magellan>
-                        <li><a href="index.html#home-about">Sobre</a></li>
-                        <li><a href="products.html">Motocicletas</a></li>
-                        <li><a href="index.html#home-services">Serviços</a></li>
-                        <li><a href="blog.html">Novidades</a></li>
-                        <li><a href="index.html#home-contact">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer></main>
-    <div class="back-top" data-magellan>
-        <a href="#home-header">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <div class="reveal" id="modelForm" data-reveal data-close-on-click="true" data-animation-in="scale-in-up"
-         data-animation-out="scale-out-down">
-        <h3 id="product-title" class="width-100 text-center margin-bottom-1 font-bold"></h3>
-
-        <form id="myhonda"
-              class="margin-top-1"
-              action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-              method="POST"
-              data-abide
-              novalidate
-        >
-            <div class="grid-container">
-                <div class="grid-x grid-padding-x">
-                    <div class="small-12 cell">
-                        <label>Concessionária de interesse:
-                            <select id="dealer_code_interest__c" name="dealer_code_interest__c">
-                                <option value="1010646">Cavalcanti Cajazeiras</option>
-                                <option value="1020641">Cavalcanti Itaporanga</option>
-                            </select>
-                        </label>
-                        <label class="form-error" data-form-error-for="dealer_code_interest__c">Informe a
-                            concessionária.</label>
-                    </div>
-                    <div class="small-12 medium-6 cell">
-                        <label>Nome:
-                            <input type="text" id="first_name" name="first_name" maxlength="40" required>
-                        </label>
-                        <label class="form-error" data-form-error-for="first_name">O nome é obrigatório!</label>
-                    </div>
-                    <div class="small-12 medium-6 cell">
-                        <label>Sobrenome:
-                            <input type="text" maxlength="80" id="last_name" name="last_name" required>
-                        </label>
-                        <label class="form-error" data-form-error-for="last_name">O sobrenome é obrigatório!</label>
-                    </div>
-                    <div class="small-12 medium-6 cell">
-                        <label>Celular:
-                            <input type="tel" maxlength="14" minlength="11" id="mobile" name="mobile" required>
-                        </label>
-                        <label class="form-error" data-form-error-for="mobile">Necessário informar o celular.</label>
-                    </div>
-
-                    <div class="small-12 medium-6 cell">
-                        <label>Email:
-                            <input type="email" maxlength="80" id="email" name="email" required>
-                        </label>
-                        <label class="form-error" data-form-error-for="email">Email inválido. Campo obrigatório.</label>
-                    </div>
-                    <div class="small-12 cell">
-                        <label>CPF:
-                            <input type="text" maxlength="11" id="cpf__c" name="cpf__c" required>
-                        </label>
-                        <label class="form-error" data-form-error-for="cpf__c">CPF inválido</label>
-                    </div>
-
-                    <div class="small-12 cell">
-                        <label>
-                            <input id="opt_in_email__c" name="opt_in_email__c" type="checkbox" value="1"
-                            />Desejo receber contatos via e-mails
-                        </label>
-                    </div>
-
-                    <div class="small-12 cell">
-                        <label>
-                            <input id="opt_in_phone__c" name="opt_in_phone__c" type="checkbox" value="1"
-                            />Desejo receber contatos via telefone
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid-container">
-                <div class="grid-x grid-margin-x margin-top-1">
-                    <fieldset class="cell large-6">
-                        <button class="button success expanded white" type="submit" value="Submit">Enviar</button>
-                    </fieldset>
-                    <fieldset class="cell large-6">
-                        <button class="button warning expanded white" type="reset" value="Reset">Limpar</button>
-                    </fieldset>
-                </div>
-            </div>
-
-            <input type="hidden" id="model_interest__c" name="model_interest__c" value="">
-            <input type=hidden name="oid" value="00D61000000HSuF">
-            <!--<input type="hidden" name="debug" value=1>-->
-            <!--<input type="hidden" name="debugEmail" value="joaotdn@gmail.com">-->
-            <input type="hidden" name="type__c" id="type__c" value="HDA">
-            <input type="hidden" name="Lead_Source" id="Lead_Source" value="WebSite Concessionária">
-            <input type="hidden" name="sub_source_media__c" id="sub_source_media__c" value="Site">
-            <input type=hidden name="retURL" value="http://www.honda.com.br/Paginas/default.aspx">
-        </form>
-
-        <button class="close-button" data-close aria-label="Close reveal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-
-<?php get_footer();
+get_footer();

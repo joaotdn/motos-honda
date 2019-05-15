@@ -31,7 +31,12 @@
     </style>
 </head>
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
 
 <?php
 get_template_part('template-parts/menu.offcanvas');
+
+if (!is_home()) get_template_part('template-parts/header.nonhome');
 
