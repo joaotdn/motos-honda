@@ -18,7 +18,7 @@ $terms = get_terms(array(
             if (!empty($terms) && !is_wp_error($terms)) {
                 $count = count($terms);
                 $i = 0;
-                $term_list = '<select name="cat-motos" id="cat-motos"><option>Escolher categoria</option><option value="">Todas</option>';
+                $term_list = '<select name="cat-motos" id="cat-motos"><option>Escolher categoria</option><option value="'. get_post_type_archive_link( 'motocicletas' ) .'">Todas</option>';
                 foreach ($terms as $term) {
                     $i++;
                     $term_list .= '<option value="' . esc_url(get_term_link($term)) . '">' . $term->name . '</option>';
@@ -35,8 +35,11 @@ $terms = get_terms(array(
     </div>
 
     <div class="cell small-12 margin-bottom-1 search-product padding-top-1">
-        <label>Buscar motocicleta:
-            <input type="text" placeholder="Nome do produto" class="width-100 input-normal">
-        </label>
+        <form role="search" method="get" id="searchform" class="width-100" action="<?php echo get_home_url(); ?>" >
+            <label for="s">Buscar motocicleta:
+                <input type="text" placeholder="Nome do produto" class="width-100 input-normal" value="" name="s" id="s">
+                <input type="hidden" name="post_type" value="motocicletas">
+            </label>
+        </form>
     </div>
 </header>

@@ -46,5 +46,16 @@
     </a>
 </div>
 
+<script>
+    (function ($) {
+        $("#cat-motos").on('change', function () {
+            const url = $(this).val();
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    })(jQuery);
+</script>
+
 </body>
 </html>
