@@ -8,7 +8,7 @@
             <a href="#" data-toggle-menu class="menu-btn-scroll hide-for-large" data-toggle-menu></a>
 
             <figure class="logo-scroll">
-                <a href="index.html" title="Página principal">
+                <a href="<?php echo get_home_url(); ?>" title="Página principal">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/incon.png" alt="Honda Cavalcante Primo">
                     <span class="display-inline-block position-relative top-3">Cavalcanti Primo</span>
                 </a>
