@@ -24,6 +24,11 @@
         <?php
     }
     ?>
+    <style>
+        .btn-black {
+            background-color: #333333;
+        }
+    </style>
 </head>
 <body <?php body_class(); ?>>
 

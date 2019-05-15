@@ -51,8 +51,15 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 /**
- * LIBS
+ * POST TYPES
  */
 
-/** Enqueue scripts */
+/** Motocicletas */
+require_once( 'post-types/motocicletas.php' );
+
+/**
+ * LIBS
+ */
 require_once( 'lib/enqueue-scripts.php' );
+require_once( 'lib/theme-support.php' );
+//require_once( 'lib/custom-icons.php' );
