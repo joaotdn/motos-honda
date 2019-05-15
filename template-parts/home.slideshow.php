@@ -1,9 +1,11 @@
 <section id="home-header" class="position-relative width-100" data-magellan-target="home-header">
 
     <?php
-        get_template_part( 'template-parts/home.topbar' );
+    $slides = get_field('home_slideshow_slides', 'option');
 
-        get_template_part( 'template-parts/home.menu.top' );
+    get_template_part('template-parts/home.topbar');
+
+    get_template_part('template-parts/home.menu.top');
     ?>
 
     <div id="home-slideshow" class="grid-container position-relative">
@@ -19,80 +21,31 @@
                         data-cycle-pager=".slide-pager"
                         data-cycle-pager-template="<span></span>"
                     >
-                        <li class="is-active slide-slide" data-product="CG Cargo">
-                            <div class="width-100 text-center large-text-left slide-text">
-                                <h2 class="margin-bottom-0">CG 125 Cargo</h2>
-                                <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
-                                <p class="margin-bottom-0">
-                                    <a href="#" data-toggle="modelForm" class="button margin-bottom-0">Tenho interesse</a>
-                                </p>
-                            </div>
-                            <div class="width-100 text-center large-text-right">
-                                <figure class="slide-figure display-inline-block">
-                                    <img class="slide-image slide-img" src="assets/img/slide1.png" alt="Space">
-                                </figure>
-                            </div>
-                        </li>
-
-                        <li class="slide-slide" data-product="CG Cargo">
-                            <div class="width-100 text-center large-text-left slide-text">
-                                <h2 class="margin-bottom-0">CG 125 Cargo</h2>
-                                <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
-                                <p class="margin-bottom-0">
-                                    <a href="#" data-toggle="modelForm" class="button margin-bottom-0">Tenho interesse</a>
-                                </p>
-                            </div>
-                            <div class="width-100 text-center large-text-right">
-                                <figure class="slide-figure display-inline-block">
-                                    <img class="slide-image slide-img" src="assets/img/slide2.png" alt="Space">
-                                </figure>
-                            </div>
-                        </li>
-
-                        <li class="slide-slide" data-product="CG Cargo">
-                            <div class="width-100 text-center large-text-left slide-text">
-                                <h2 class="margin-bottom-0">CG 125 Cargo</h2>
-                                <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
-                                <p class="margin-bottom-0">
-                                    <a href="#" data-toggle="modelForm" class="button margin-bottom-0">Tenho interesse</a>
-                                </p>
-                            </div>
-                            <div class="width-100 text-center large-text-right">
-                                <figure class="slide-figure display-inline-block">
-                                    <img class="slide-image slide-img" src="assets/img/slide3.png" alt="Space">
-                                </figure>
-                            </div>
-                        </li>
-
-                        <li class="slide-slide" data-product="CG Cargo">
-                            <div class="width-100 text-center large-text-left slide-text">
-                                <h2 class="margin-bottom-0">CG 125 Cargo</h2>
-                                <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
-                                <p class="margin-bottom-0">
-                                    <a href="#" data-toggle="modelForm" class="button margin-bottom-0">Tenho interesse</a>
-                                </p>
-                            </div>
-                            <div class="width-100 text-center large-text-right">
-                                <figure class="slide-figure display-inline-block">
-                                    <img class="slide-image slide-img" src="assets/img/slide4.png" alt="Space">
-                                </figure>
-                            </div>
-                        </li>
-
-                        <li class="slide-slide" data-product="CG Cargo">
-                            <div class="width-100 text-center large-text-left slide-text">
-                                <h2 class="margin-bottom-0">CG 125 Cargo</h2>
-                                <h4 class="margin-bottom-1">Uma máguina de trabalhar</h4>
-                                <p class="margin-bottom-0">
-                                    <a href="#" data-toggle="modelForm" class="button margin-bottom-0">Tenho interesse</a>
-                                </p>
-                            </div>
-                            <div class="width-100 text-center large-text-right">
-                                <figure class="slide-figure display-inline-block">
-                                    <img class="slide-image slide-img" src="assets/img/slide5.png" alt="Space">
-                                </figure>
-                            </div>
-                        </li>
+                        <?php
+                        if (!empty($slides)):
+                            foreach ($slides as $slide):
+                                ?>
+                                <li class="is-active slide-slide" data-product="<?php echo $slide['home_slideshow_slide_nome']; ?>">
+                                    <div class="width-100 text-center large-text-left slide-text">
+                                        <h2 class="margin-bottom-0"><?php echo $slide['home_slideshow_slide_nome']; ?></h2>
+                                        <h4 class="margin-bottom-1"><?php echo $slide['home_slideshow_slide_descricao']; ?></h4>
+                                        <p class="margin-bottom-0">
+                                            <a href="#" title="<?php echo $slide['home_slideshow_slide_nome']; ?>"
+                                               data-toggle="modelForm" class="button margin-bottom-0">Tenho
+                                                interesse</a>
+                                        </p>
+                                    </div>
+                                    <div class="width-100 text-center large-text-right">
+                                        <figure class="slide-figure display-inline-block">
+                                            <img class="slide-image slide-img" src="<?php echo $slide['home_slideshow_slide_img']; ?>"
+                                                 alt="Imagem de uma motocicleta">
+                                        </figure>
+                                    </div>
+                                </li>
+                            <?php
+                            endforeach;
+                        endif;
+                        ?>
                     </ul>
                 </div>
             </div>

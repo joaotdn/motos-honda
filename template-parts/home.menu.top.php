@@ -3,8 +3,8 @@
 
     <div class="grid-x grid-padding-x padding-top-1">
         <div class="cell small-12 large-4 text-center large-text-left padd">
-            <a href="#" class="display-inline-block logo">
-                <img src="assets/img/logo.png" alt="Honda Cavalcante Primo">
+            <a href="#" class="display-inline-block logo" title="Página principal">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Honda Cavalcanti Primo">
                 <span><strong>Cavalcanti Primo</strong></span>
             </a>
         </div>
@@ -15,7 +15,8 @@
                 <li><a href="#home-products">Motocicletas</a></li>
                 <li><a href="#home-services">Serviços</a></li>
                 <li><a href="#home-news">Novidades</a></li>
-                <li><a href="#home-contact">Contato</a></li>                </ul>
+                <li><a href="#home-contact">Contato</a></li>
+            </ul>
         </div>
     </div>
 </div>

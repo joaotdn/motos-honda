@@ -36,8 +36,15 @@ if( function_exists('acf_add_options_page') ) {
         'capability'  => 'edit_posts',
         'redirect'    => false
     ));
+
     acf_add_options_sub_page(array(
-        'page_title'  => 'Configure as seções da página principal',
+        'page_title'  => 'Informações sobre a empresa',
+        'menu_title'  => 'A Empresa',
+        'parent_slug' => 'opcoes-gerais',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'  => 'Configurar seções da página principal',
         'menu_title'  => 'Página principal',
         'parent_slug' => 'opcoes-gerais',
     ));
