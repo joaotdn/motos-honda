@@ -45,7 +45,7 @@ global $post;
                     <?php endif; ?>
                 </div>
 
-                <nav aria-label="Pagination" class="margin-top-3 width-100 text-center">
+                <nav aria-label="Pagination" class="margin-top-3 width-100 text-center pagination">
                     <?php
                     global $wp_query;
                     $big = 999999999; // need an unlikely integer

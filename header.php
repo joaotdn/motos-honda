@@ -28,6 +28,24 @@
         .btn-black {
             background-color: #333333;
         }
+        .wpcf7-submit {
+            background-color: transparent;
+            color: #fff;
+            text-transform: uppercase;
+            display: inline-block;
+            border: 1px solid #fff;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .logo-fotoer {
+            line-height: 23px;
+        }
+        .store-list span {
+            display: block;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body <?php body_class(); ?>>

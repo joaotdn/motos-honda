@@ -1,3 +1,6 @@
+<?php
+$enderecos = get_field('lojas_enderecos', 'option');
+?>
 <footer id="footer" class="width-100 position-relative clear">
     <div class="grid-container">
         <div class="grid-padding-x grid-x">
@@ -8,29 +11,35 @@
                         <span>Cavalcanti Primo</span>
                     </a>
                 </h1>
-
-                <p>
-                    <i class="fas fa-phone"></i> (83) 988998877
-                </p>
-
-                <p>
-                    <i class="fas fa-map-marker-alt align-top"></i>
-                    <span class="display-inline-block">
-                        Rua José Firmino Ferreira, 976 - Centro<br>
-                        Cajazeiras - PB<br>
-                        CEP: 58900-000
-                    </span>
-                </p>
             </div>
 
             <div class="cell small-6 show-for-large">
-                <ul class="menu align-right" data-magellan>
-                    <li><a href="index.html#home-about">Sobre</a></li>
-                    <li><a href="products.html">Motocicletas</a></li>
-                    <li><a href="index.html#home-services">Serviços</a></li>
-                    <li><a href="blog.html">Novidades</a></li>
-                    <li><a href="index.html#home-contact">Contato</a></li>
-                </ul>
+                <?php
+                get_template_part('template-parts/menu.nohome');
+                ?>
+            </div>
+
+            <div class="cell small-12 store-list margin-top-1">
+                <div class="grid-padding-x grid-x">
+                    <?php
+                    if (!empty($enderecos)):
+                        foreach ($enderecos as $endereco):
+                            ?>
+                            <div class="cell small-12 large-3 margin-bottom-1">
+                                <span class="margin-bottom-1"><strong><i class="fas fa-map-marker-alt"></i> <?php echo $endereco['loja_nome']; ?></strong></span>
+                                <span>
+                                      <?php echo $endereco['loja_logradouro'] ?>, <?php echo $endereco['loja_numero'] ?> - <?php echo $endereco['loja_bairro'] ?><br>
+                                      <?php echo $endereco['loja_cidade'] ?><br>
+                                      Fone: <?php echo $endereco['loja_telefone']; ?><br>
+                                      CEP: <?php echo $endereco['loja_cep'] ?><br>
+                                      Email: <?php echo $endereco['loja_email'] ?>
+                                </span>
+                            </div>
+                        <?php
+                        endforeach;
+                    endif;
+                    ?>
+                </div>
             </div>
         </div>
     </div>
