@@ -24,7 +24,7 @@ function plandd_acf_dir( $dir ) {
 
 include_once( get_stylesheet_directory() . '/lib/acf-pro/acf.php' );
 
-//define( 'ACF_LITE' , true );
+define( 'ACF_LITE' , true );
 
 //include_once( get_stylesheet_directory() . '/library/acf-pro/preconfig.php' );
 
@@ -35,12 +35,6 @@ if( function_exists('acf_add_options_page') ) {
         'menu_slug'   => 'opcoes-gerais',
         'capability'  => 'edit_posts',
         'redirect'    => false
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'  => 'Informações sobre a empresa',
-        'menu_title'  => 'A Empresa',
-        'parent_slug' => 'opcoes-gerais',
     ));
 
     acf_add_options_sub_page(array(
