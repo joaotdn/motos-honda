@@ -46,6 +46,11 @@
             display: block;
             font-size: 12px;
         }
+        .see-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body <?php body_class(); ?>>

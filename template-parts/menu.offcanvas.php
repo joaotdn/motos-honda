@@ -10,5 +10,6 @@
         <li><a href="#home-products">Motocicletas</a></li>
         <li><a href="#home-services">Serviços</a></li>
         <li><a href="#home-news">Novidades</a></li>
-        <li><a href="#home-contact">Contato</a></li>    </ul>
+        <li><a href="#home-contact">Contato</a></li>    
+    </ul>
 </div>

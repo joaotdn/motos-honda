@@ -8,7 +8,7 @@
             <div class="cell small-6">
                 <p class="margin-0 padding-0">
                     <i class="fas fa-map-marker-alt"></i>
-                    / <?php echo "{$enderecos[0]['loja_logradouro']}, {$enderecos[0]['loja_numero']}" ?>
+                    / <?php echo "{$enderecos[0]['loja_logradouro']}, {$enderecos[0]['loja_numero']}" ?> -  <?php echo "{$enderecos[0]['loja_cidade']}"; ?>
                 </p>
             </div>
             <div class="cell small-6 text-right">

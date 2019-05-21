@@ -14,12 +14,11 @@
 
         <div class="cell small-12 large-8 show-for-large scroll-nav">
             <ul class="menu align-right" data-magellan>
-                <?php get_template_part('template-parts/menu.home'); ?>
-                <!--                <li><a href="#home-about">Sobre</a></li>-->
-                <!--                <li><a href="#home-products">Motocicletas</a></li>-->
-                <!--                <li><a href="#home-services">Serviços</a></li>-->
-                <!--                <li><a href="#home-news">Novidades</a></li>-->
-                <!--                <li><a href="#home-contact">Contato</a></li>-->
+                <li><a href="#home-about">Sobre</a></li>
+                <li><a href="#home-products">Motocicletas</a></li>
+                <li><a href="#home-services">Serviços</a></li>
+                <li><a href="#home-news">Novidades</a></li>
+                <li><a href="#home-contact">Contato</a></li>
             </ul>
         </div>
     </div>

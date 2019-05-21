@@ -26,7 +26,7 @@ get_header();
                     <h3 class="font-bold text-uppercase font-san-serif display-inline-block margin-bottom-1">
                         Consórcio
                     </h3>
-                    <p>Você de moto com parcelas que cabem no seu bolso</p>
+                    <p>Você de moto com parcelas que cabem no seu bolso. Preencha o formulário e aguarde um de nossos atendentes entrar em contato.</p>
                 </div>
             </header>
 
@@ -121,9 +121,9 @@ get_header();
                             </div>
                         </div>
 
-                        <input type="hidden" id="model_interest__c" name="model_interest__c" value="">
+                        <input type="hidden" id="model_interest__c" name="model_interest__c" value="Consórcio">
                         <input type=hidden name="oid" value="00D61000000HSuF">
-                        <input type="hidden" name="type__c" id="type__c" value="CS">
+                        <input type="hidden" name="type__c" id="type__c" value="CNH">
                         <input type="hidden" name="Lead_Source" id="Lead_Source" value="WebSite Concessionária">
                         <input type="hidden" name="sub_source_media__c" id="sub_source_media__c" value="Site">
                         <input type=hidden name="retURL" value="http://www.honda.com.br/Paginas/default.aspx">
