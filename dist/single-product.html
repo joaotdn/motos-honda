@@ -1,0 +1,290 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG 125 Cargo - Honda Cavalcanti Primo</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Poppins:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
+
+<div class="menu-offcanvas height-100">
+    <button class="close-button" type="button" data-toggle-menu>
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <ul class="menu vertical margin-top-2 main-menu-off" data-magellan>
+        <li><a href="#home-about">Sobre</a></li>
+        <li><a href="#home-products">Motocicletas</a></li>
+        <li><a href="#home-services">Serviços</a></li>
+        <li><a href="#home-news">Novidades</a></li>
+        <li><a href="#home-contact">Contato</a></li>    </ul>
+</div>
+<a href="#" data-toggle-menu class="close-menu width-100 height-100"></a><div class="header width-100 position-fixed-top shadow"
+     data-aos="fade-down"
+     data-aos-delay="600"
+     data-magellan-target="home-header"
+>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-12 large-4">
+            <a href="#" data-toggle-menu class="menu-btn-scroll hide-for-large" data-toggle-menu></a>
+
+            <figure class="logo-scroll">
+                <a href="index.html" title="Página principal">
+                    <img src="assets/img/incon.png" alt="Honda Cavalcante Primo">
+                    <span class="display-inline-block position-relative top-3">Cavalcanti Primo</span>
+                </a>
+            </figure>
+        </div>
+
+        <div class="cell small-12 large-8 show-for-large scroll-nav">
+            <ul class="menu align-right" data-magellan>
+                <li><a href="index.html#home-about">Sobre</a></li>
+                <li><a href="products.html">Motocicletas</a></li>
+                <li><a href="index.html#home-services">Serviços</a></li>
+                <li><a href="blog.html">Novidades</a></li>
+                <li><a href="index.html#home-contact">Contato</a></li>            </ul>
+        </div>
+    </div>
+</div><div id="page-body" class="grid-container"
+    data-aos="fade"
+     data-aos-delay="800"
+>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <nav aria-label="You are here:" role="navigation" class="width-100">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="products.html">Motocicletas</a></li>
+                    <li><a href="products.html">City</a></li>
+                    <li class="disabled">CG 125 Cargo</li>
+                </ul>
+            </nav>
+        
+            <header class="width-100 page-header section-title-1 grid-x">
+                <div class="cell small-12 medium-8 margin-bottom-1 text-center medium-text-left">
+                    <h3 class="font-bold text-uppercase font-san-serif display-inline-block">
+                        CG 125 Cargo
+                    </h3>
+                    <p class="medium-gray">Uma máquina de trabalhar</p>
+                </div>
+            </header>
+        
+            <section class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-8 product-colors">
+                    <ul class="tabs" data-tabs id="choice-colors">
+                        <li class="tabs-title is-active"><a href="#vermelho" aria-selected="true">Vermelho</a></li>
+                        <li class="tabs-title"><a data-tabs-target="preto" href="#preto">Prata</a></li>
+                        <li class="tabs-title"><a data-tabs-target="azul" href="#azul">Azul</a></li>
+                    </ul>
+        
+                    <div class="tabs-content" data-tabs-content="choice-colors">
+                        <div class="tabs-panel is-active" id="vermelho">
+                            <img src="assets/img/c3.png" alt="">
+                        </div>
+                        <div class="tabs-panel" id="preto">
+                            <img src="assets/img/c2.png" alt="">
+                        </div>
+                        <div class="tabs-panel" id="azul">
+                            <img src="assets/img/c1.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="width-100 single-form margin-top-2 margin-bottom-2">
+                        <header class="width-100 margin-bottom-2">
+                            <h4 class="font-san-serif primary-color"><strong>Tenho interesse</strong></h4>
+                            <p class="medium-gray"><small>Preencha o formulário abaixo e aguarde um de nossos atendentes.</small></p>
+                        </header>
+        
+                        <form id="myhonda"
+                              class="margin-top-1"
+                              action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                              method="POST"
+                              data-abide
+                              novalidate
+                        >
+                            <div class="grid-x grid-padding-x">
+                                <div class="small-12 cell">
+                                    <label>Concessionária de interesse:
+                                        <select  id="dealer_code_interest__c" name="dealer_code_interest__c">
+                                            <option value="1010646">Cavalcanti Cajazeiras</option>
+                                            <option value="1020641">Cavalcanti Itaporanga</option>
+                                        </select>
+                                    </label>
+                                    <label class="form-error" data-form-error-for="dealer_code_interest__c">Informe a concessionária.</label>
+                                </div>
+                                <div class="small-12 medium-6 cell">
+                                    <label>Nome:
+                                        <input type="text" id="first_name" name="first_name" maxlength="40" required>
+                                    </label>
+                                    <label class="form-error" data-form-error-for="first_name">O nome é obrigatório!</label>
+                                </div>
+                                <div class="small-12 medium-6 cell">
+                                    <label>Sobrenome:
+                                        <input type="text" maxlength="80" id="last_name" name="last_name" required>
+                                    </label>
+                                    <label class="form-error" data-form-error-for="last_name">O sobrenome é obrigatório!</label>
+                                </div>
+                                <div class="small-12 medium-6 cell">
+                                    <label>Celular:
+                                        <input type="tel" maxlength="14" minlength="11" id="mobile" name="mobile" required>
+                                    </label>
+                                    <label class="form-error" data-form-error-for="mobile">Necessário informar o celular.</label>
+                                </div>
+        
+                                <div class="small-12 medium-6 cell">
+                                    <label>Email:
+                                        <input type="email" maxlength="80" id="email" name="email" required>
+                                    </label>
+                                    <label class="form-error" data-form-error-for="email">Email inválido. Campo obrigatório.</label>
+                                </div>
+                                <div class="small-12 cell">
+                                    <label>CPF:
+                                        <input type="text" maxlength="11" id="cpf__c" name="cpf__c" required>
+                                    </label>
+                                    <label class="form-error" data-form-error-for="cpf__c">CPF inválido</label>
+                                </div>
+        
+                                <div class="small-12 cell">
+                                    <label>
+                                        <input id="opt_in_email__c" name="opt_in_email__c" type="checkbox" value="1"
+                                        />Desejo receber contatos via e-mails
+                                    </label>
+                                </div>
+        
+                                <div class="small-12 cell">
+                                    <label>
+                                        <input id="opt_in_phone__c" name="opt_in_phone__c" type="checkbox" value="1"
+                                        />Desejo receber contatos via telefone
+                                    </label>
+                                </div>
+                            </div>
+        
+                            <div class="grid-x grid-margin-x margin-top-1">
+                                <fieldset class="cell large-6">
+                                    <button class="button success expanded white" type="submit" value="Submit">Enviar</button>
+                                </fieldset>
+                                <fieldset class="cell large-6">
+                                    <button class="button warning expanded white" type="reset" value="Reset">Limpar</button>
+                                </fieldset>
+                            </div>
+        
+                            <input type="hidden" id="model_interest__c" name="model_interest__c" value="CG 125 Cargo">
+                            <input type=hidden name="oid" value="00D61000000HSuF">
+                            <!--<input type="hidden" name="debug" value=1>-->
+                            <!--<input type="hidden" name="debugEmail" value="joaotdn@gmail.com">-->
+                            <input type="hidden" name="type__c" id="type__c" value="HDA">
+                            <input type="hidden" name="Lead_Source" id="Lead_Source" value="WebSite Concessionária">
+                            <input type="hidden" name="sub_source_media__c" id="sub_source_media__c" value="Site">
+                            <input type=hidden name="retURL" value="http://www.honda.com.br/Paginas/default.aspx">
+                        </form>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-4 product-espec">
+                    <header class="width-100 margin-bottom-1">
+                        <h4 class="font-san-serif text-uppercase primary-color"><strong>Especificações</strong></h4>
+                    </header>
+                    <ul class="menu vertical">
+                        <li>
+                            <p class="margin-0"><strong>Motor</strong></p>
+                            <span class="display-block"><b>Tipo:</b> Diamond Frame</span>
+                            <span class="display-block"><b>Suspensão Dianteira/Curso:</b> Garfo telescópico / 135 mm</span>
+                            <span class="display-block"><b>Suspensão Traseira/Curso:</b> Dois amortecedores / 106 mm</span>
+                            <span class="display-block"><b>Freio Dianteiro/Diâmetro:</b> A disco / 240 mm</span>
+                            <span class="display-block"><b>Freio Traseiro/Diâmetro:</b> A tambor / 130 mm</span>
+                            <span class="display-block"><b>Pneu Dianteiro:</b> 80/100 -18</span>
+                            <span class="display-block"><b>Pneu Traseiro:</b> 100/80 -18</span>
+                        </li>
+        
+                        <li>
+                            <p class="margin-0"><strong>Sistema Elétrico</strong></p>
+                            <span class="display-block"><b>Ignição:</b> Eletrônica</span>
+                            <span class="display-block"><b>Bateria:</b> 12V - 4 Ah</span>
+                            <span class="display-block"><b>Farol:</b> 35/35W</span>
+                        </li>
+        
+                        <li>
+                            <p class="margin-0"><strong>Capacidade</strong></p>
+                            <span class="display-block"><b>Tanque de Combustível:</b> 16,1 litros</span>
+                            <span class="display-block"><b>Óleo do Motor:</b> 1,2 litro</span>
+                        </li>
+        
+                        <li>
+                            <p class="margin-0"><strong>Dimensões</strong></p>
+                            <span class="display-block"><b>Comprimento x Largura x Altura:</b> 2032 x 739 x 1087 mm</span>
+                            <span class="display-block"><b>Distância entre eixos:</b> 1315 mm</span>
+                            <span class="display-block"><b>Distância mínima do solo:</b> 196 mm</span>
+                            <span class="display-block"><b>Altura do assento:</b> 790 mm</span>
+                            <span class="display-block"><b>Peso Seco:</b> 117 kg</span>
+                        </li>
+        
+                        <li>
+                            <p class="margin-0"><strong>Chassi</strong></p>
+                            <span class="display-block"><b>Tipo:</b> Diamond Frame</span>
+                            <span class="display-block"><b>Suspensão Dianteira/Curso:</b> Garfo telescópico / 135 mm</span>
+                            <span class="display-block"><b>Suspensão Traseira/Curso:</b> Dois amortecedores / 106 mm</span>
+                            <span class="display-block"><b>Freio Dianteiro/Diâmetro:</b> A disco / 240 mm</span>
+                            <span class="display-block"><b>Freio Traseiro/Diâmetro:</b> A tambor / 130 mm</span>
+                            <span class="display-block"><b>Pneu Dianteiro:</b> 80/100 -18</span>
+                            <span class="display-block"><b>Pneu Traseiro:</b> 100/80 -18</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<footer id="footer" class="width-100 position-relative clear">
+    <div class="grid-container">
+        <div class="grid-padding-x grid-x">
+            <div class="cell small-12 large-6">
+                <h1 class="logo-fotoer margin-bottom-2">
+                    <a href="#" title="Honda Cavalcante Primo">
+                        <img src="assets/img/icon-white.png" alt="">
+                        <span>Cavalcanti Primo</span>
+                    </a>
+                </h1>
+
+                <p>
+                    <i class="fas fa-phone"></i> (83) 988998877
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt align-top"></i>
+                    <span class="display-inline-block">
+                        Rua José Firmino Ferreira, 976 - Centro<br>
+                        Cajazeiras - PB<br>
+                        CEP: 58900-000
+                    </span>
+                </p>
+            </div>
+
+            <div class="cell small-6 show-for-large">
+                <ul class="menu align-right" data-magellan>
+                    <li><a href="index.html#home-about">Sobre</a></li>
+                    <li><a href="products.html">Motocicletas</a></li>
+                    <li><a href="index.html#home-services">Serviços</a></li>
+                    <li><a href="blog.html">Novidades</a></li>
+                    <li><a href="index.html#home-contact">Contato</a></li>                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="back-top" data-magellan>
+    <a href="#page-body">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+</body>
+</html>

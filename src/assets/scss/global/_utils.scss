@@ -68,3 +68,37 @@
 .light-gray {
   color: $light-gray !important;
 }
+
+.medium-gray {
+  color: $medium-gray;
+}
+
+.btn-black {
+  background-color: #333333;
+}
+.wpcf7-submit {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.logo-fotoer {
+  line-height: 23px;
+}
+.store-list span {
+  display: block;
+  font-size: 12px;
+}
+.see-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primary-color {
+  color: $primary-color;
+}

@@ -26,10 +26,48 @@ ul.share-buttons .sr-only{
   overflow: hidden;
 }
 
-.accessories-form {
+.accessories-form, .single-form {
   select, input, select:focus, input:focus {
     background-color: $white;
     color: $dark-gray;
     border: 1px solid $light-gray;
+  }
+}
+
+.product-colors {
+  .tabs {
+    border-bottom: 1px solid $light-gray;
+  }
+  .tabs-title {
+    border: 1px solid $light-gray;
+    border-bottom: none;
+    &:not(:first-child) {
+      border-left: none;
+    }
+  }
+
+  a {
+    font-size: rem-calc(14);
+    color: $dark-gray;
+    &:hover, &:focus {
+      color: $primary-color;
+    }
+  }
+}
+
+.single-form {
+  header {
+    border-bottom: 1px dotted $light-gray;
+  }
+}
+
+.product-espec {
+  span {
+    font-size: rem-calc(12);
+    color: $dark-gray;
+  }
+
+  li {
+    margin-bottom: rem-calc(10);
   }
 }
