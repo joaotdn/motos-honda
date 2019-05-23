@@ -46,7 +46,8 @@ if ( ! function_exists( 'foundationpress_theme_support' ) ) :
 endif;
 
 if (function_exists('add_image_size')) {
-    add_image_size('product', 390, 250, true);
+	add_image_size('product', 390, 250, true);
+	add_image_size('product_thumb', 200, 128, true);
 }
 
 function modify_read_more_link() {

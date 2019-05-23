@@ -46,10 +46,13 @@
                             $produtos_posts = get_posts($args);
                             foreach ($produtos_posts as $post): setup_postdata($post);
                                 ?>
-                                <div class="cell product-item position-relative" data-aos="fade-up" data-product="<?php the_title(); ?>">
+                                <div class="cell" data-aos="fade-up" data-product="<?php the_title(); ?>">
                                     <figure class="width-100">
-                                        <img src="<?php echo get_the_post_thumbnail( $post->ID, 'product' ); ?>" alt="">
+	                                    <?php echo get_the_post_thumbnail( $post->ID, 'product' ); ?>
                                         <div class="square width-100 height-100"></div>
+                                        <a href="<?php the_permalink(); ?>" class="display-inline-block text-center" title="Mais informações" data-tooltip>
+                                            <i class="fas fa-search show-for-large-up"></i>
+                                        </a>
                                     </figure>
                                     <div class="width-100 text-center">
                                         <h3><a href="#" data-toggle="modelForm"
@@ -57,9 +60,6 @@
                                         <p><a href="#" data-toggle="modelForm" title="Adquirir <?php the_title(); ?>"
                                               class="button text-uppercase small">Tenho
                                                 interesse</a></p>
-                                    </div>
-                                    <div class="see-more width-100 text-center">
-                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
                             <?php

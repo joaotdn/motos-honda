@@ -24,7 +24,7 @@ function plandd_acf_dir( $dir ) {
 
 include_once( get_stylesheet_directory() . '/lib/acf-pro/acf.php' );
 
-define( 'ACF_LITE' , true );
+//define( 'ACF_LITE' , true );
 
 //include_once( get_stylesheet_directory() . '/library/acf-pro/preconfig.php' );
 
@@ -55,5 +55,9 @@ require_once( 'post-types/motocicletas.php' );
  * LIBS
  */
 require_once( 'lib/enqueue-scripts.php' );
+
 require_once( 'lib/theme-support.php' );
+
+require_once( 'lib/slugfy.php' );
+
 //require_once( 'lib/custom-icons.php' );

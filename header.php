@@ -9,12 +9,11 @@
 
     <?php
     wp_head();
-    // slideshow
-    $bgslide = (get_field('home_slideshow_bg', 'option'))
-        ? get_field('home_slideshow_bg', 'option')
-        : get_template_directory_uri() . '/assets/img/bg-top.jpg';
 
     if (is_home()) {
+	    $bgslide = (get_field('home_slideshow_bg', 'option'))
+		    ? get_field('home_slideshow_bg', 'option')
+		    : get_template_directory_uri() . '/assets/img/bg-top.jpg';
         ?>
         <style>
             #home-header {
@@ -24,34 +23,6 @@
         <?php
     }
     ?>
-    <style>
-        .btn-black {
-            background-color: #333333;
-        }
-        .wpcf7-submit {
-            background-color: transparent;
-            color: #fff;
-            text-transform: uppercase;
-            display: inline-block;
-            border: 1px solid #fff;
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .logo-fotoer {
-            line-height: 23px;
-        }
-        .store-list span {
-            display: block;
-            font-size: 12px;
-        }
-        .see-more {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 <body <?php body_class(); ?>>
 <div id="fb-root"></div>
