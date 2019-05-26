@@ -23,6 +23,17 @@
         <?php
     }
     ?>
+    <style>
+        .category-name {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    </style>
 </head>
 <body <?php body_class(); ?>>
 <div id="fb-root"></div>

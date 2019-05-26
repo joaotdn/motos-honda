@@ -60,4 +60,6 @@ require_once( 'lib/theme-support.php' );
 
 require_once( 'lib/slugfy.php' );
 
+require_once( 'lib/query-custom-term.php' );
+
 //require_once( 'lib/custom-icons.php' );
