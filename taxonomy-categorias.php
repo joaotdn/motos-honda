@@ -17,30 +17,8 @@ global $post;
                     if (have_posts()) : while (have_posts()) : the_post();
                         global $post_id;
                         $terms = get_the_terms( $post_id, 'categorias' );
-                        ?>
-                        <div class="cell" data-aos="fade-up" data-product="<?php the_title(); ?>">
-                            <figure class="width-100">
-                                <?php echo get_the_post_thumbnail( $post->ID, 'product' ); ?>
-                                <div class="square width-100 height-100"></div>
-                            </figure>
-                            <div class="width-100 text-center">
-                                <h3><a href="#" data-toggle="modelForm" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-                                <p>
-                                    <?php
-                                    if($terms[0]->slug == 'seminovas'):
-                                    ?>
-                                    <a href="<?php echo get_home_url() ?>#home-contact" title="<?php the_title(); ?>" class="button text-uppercase small btn-black" data-toggle="modelForm">Entre em contato</a></p>
-                                <?php
-                                else:
-                                    ?>
-                                    <a href="#" title="<?php the_title(); ?>" class="button text-uppercase small" data-toggle="modelForm">Tenho
-                                        interesse</a></p>
-                                <?php
-                                endif;
-                                ?>
-                            </div>
-                        </div>
-                    <?php endwhile; else: ?>
+                            get_template_part('template-parts/product.archive.container');
+                        endwhile; else: ?>
                         <h3 class="width-100"><?php _e('Sem resultados...'); ?></h3>
                     <?php endif; ?>
                 </div>
