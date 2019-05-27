@@ -3,6 +3,7 @@ $terms = get_terms(array(
     'taxonomy' => 'categorias',
     'hide_empty' => false,
 ));
+$archive_motors = get_page_link( get_page_by_title( 'Motocicletas' )->ID );
 ?>
 <header class="width-100 page-header section-title-3 grid-x">
     <div class="cell small-12 medium-8 margin-bottom-1 text-center medium-text-left">
@@ -18,7 +19,7 @@ $terms = get_terms(array(
             if (!empty($terms) && !is_wp_error($terms)) {
                 $count = count($terms);
                 $i = 0;
-                $term_list = '<select name="cat-motos" id="cat-motos"><option>Escolher categoria</option><option value="'. get_post_type_archive_link( 'motocicletas' ) .'">Todas</option>';
+                $term_list = '<select name="cat-motos" id="cat-motos"><option>Escolher categoria</option><option value="'. $archive_motors .'">Todas</option>';
                 foreach ($terms as $term) {
                     $i++;
                     $term_list .= '<option value="' . esc_url(get_term_link($term)) . '">' . $term->name . '</option>';
