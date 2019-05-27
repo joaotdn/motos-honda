@@ -24,9 +24,7 @@ function plandd_acf_dir( $dir ) {
 
 include_once( get_stylesheet_directory() . '/lib/acf-pro/acf.php' );
 
-//define( 'ACF_LITE' , true );
-
-//include_once( get_stylesheet_directory() . '/library/acf-pro/preconfig.php' );
+define( 'ACF_LITE' , true );
 
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(

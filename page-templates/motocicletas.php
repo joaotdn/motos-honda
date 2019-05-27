@@ -20,6 +20,8 @@ global $post;
 	            <?php query_custom_term('scooter'); ?>
 	            <?php query_custom_term('naked'); ?>
 	            <?php query_custom_term('trail'); ?>
+	            <?php query_custom_term('off-road'); ?>
+	            <?php query_custom_term('sport'); ?>
 	            <?php query_custom_term('touring'); ?>
             </section>
         </div>

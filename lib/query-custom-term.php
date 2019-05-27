@@ -21,7 +21,7 @@ if ( ! function_exists( 'query_custom_term' ) ) :
 		$category  = get_term_by( 'slug', $term_name, 'categorias' );
 
 		if (isset($the_query) && !empty($the_query)) {
-			echo '<div class="list-products list-products-page grid-padding-x grid-x grid-' . $term_name . '">';
+			echo '<div class="list-products list-products-page margin-bottom-2 grid-padding-x grid-x grid-' . $term_name . '">';
 			echo '<h2 class="category-name font-san-serif">' . $category->name . '</h2>';
 			if ( $the_query->have_posts() ): while ( $the_query->have_posts() ) :$the_query->the_post();
 				global $post;
@@ -35,7 +35,7 @@ if ( ! function_exists( 'query_custom_term' ) ) :
                         </a>
                     </figure>
                     <div class="width-100 text-center">
-                        <h3><a href="<?php the_permalink(); ?>"
+                        <h3 style="font-size: 18px;" class="font-san-serif"><a href="<?php the_permalink(); ?>"
                                title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                         <p><a href="#" data-toggle="modelForm" title="Adquirir <?php the_title(); ?>"
                               class="button text-uppercase small">Tenho

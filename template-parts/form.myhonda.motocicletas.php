@@ -1,3 +1,7 @@
+<?php
+    $page = get_page_by_title('Confirmacao');
+    $link = get_page_link($page->ID);
+?>
 <div class="reveal" id="modelForm" data-reveal data-close-on-click="true" data-animation-in="scale-in-up"
      data-animation-out="scale-out-down">
     <h3 id="product-title" class="width-100 text-center margin-bottom-1 font-bold"></h3>
@@ -87,7 +91,7 @@
         <input type="hidden" name="type__c" id="type__c" value="HDA">
         <input type="hidden" name="Lead_Source" id="Lead_Source" value="WebSite Concessionária">
         <input type="hidden" name="sub_source_media__c" id="sub_source_media__c" value="Site">
-        <input type=hidden name="retURL" value="http://www.honda.com.br/Paginas/default.aspx">
+        <input type=hidden name="retURL" value="<?php echo $link; ?>">
     </form>
 
     <button class="close-button" data-close aria-label="Close reveal" type="button">
