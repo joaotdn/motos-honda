@@ -4,8 +4,8 @@
     <div class="grid-x grid-padding-x padding-top-1">
         <div class="cell small-12 large-4 text-center large-text-left padd">
             <a href="#" class="display-inline-block logo" title="Página principal">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Honda Cavalcanti Primo">
-                <span><strong>Cavalcanti Primo</strong></span>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand.png" alt="Honda Cavalcanti Primo" width="200">
+<!--                <span><strong>Cavalcanti Primo</strong></span>-->
             </a>
         </div>
 

@@ -23,11 +23,20 @@ $link = get_page_link($page->ID);
                 </ul>
             </nav>
 
+            <div class="width-100 margin-bottom-2">
+                <div class="grid-x">
+                    <div class="cell medium-6 small-12">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/c2.jpg" alt="">
+                    </div>
+
+                    <div class="cell small-6 text-right show-for-medium">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/c1.jpg" alt="" width="200">
+                    </div>
+                </div>
+            </div>
+
             <header class="width-100 page-header section-title-3 grid-x">
                 <div class="cell small-12 margin-bottom-1 text-center medium-text-left">
-                    <h3 class="font-bold text-uppercase font-san-serif display-inline-block margin-bottom-1">
-                        Consórcio
-                    </h3>
                     <p>Você de moto com parcelas que cabem no seu bolso. Preencha o formulário e aguarde um de nossos atendentes entrar em contato.</p>
                 </div>
             </header>

@@ -5,10 +5,10 @@ $enderecos = get_field( 'lojas_enderecos', 'option' );
     <div class="grid-container">
         <div class="grid-padding-x grid-x">
             <div class="cell small-12 large-6">
-                <h1 class="logo-fotoer margin-bottom-2">
+                <h1 class="margin-bottom-2">
                     <a href="#" title="Honda Cavalcante Primo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-white.png" alt="">
-                        <span>Cavalcanti Primo</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand-footer.png" alt="">
+<!--                        <span>Cavalcanti Primo</span>-->
                     </a>
                 </h1>
             </div>
